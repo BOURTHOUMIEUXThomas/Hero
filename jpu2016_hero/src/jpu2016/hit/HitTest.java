@@ -1,21 +1,16 @@
 /**
  * 
  */
-package jpu2016.hero;
+package jpu2016.hit;
 
 import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 
 /**
  * @author thoma
- *
+
  */
-public class HumanTest {
+public class HitTest {
 
 	/**
 	 * @throws java.lang.Exception
@@ -46,10 +41,28 @@ public class HumanTest {
 	}
 
 	/**
-	 * Test method for {@link jpu2016.hero.Human#Human()}.
+	 * Test method for {@link jpu2016.hit.Hit#getStrength()}.
 	 */
 	@Test
-	public void testHuman() {
+	public void testGetStrength() {
+		final int expected = 1; 
+		final Hit hit = new Hit(1, 10, TypeHit.NORMAL); 
+		  assertEquals(expected, hit.getStrength())
+	}
+
+	/**
+	 * Test method for {@link jpu2016.hit.Hit#getRange()}.
+	 */
+	@Test
+	public void testGetRange() {
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * Test method for {@link jpu2016.hit.Hit#getTypeHit()}.
+	 */
+	@Test
+	public void testGetTypeHit() {
 		fail("Not yet implemented");
 	}
 
